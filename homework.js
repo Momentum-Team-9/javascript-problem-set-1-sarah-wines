@@ -95,16 +95,20 @@ function multigreeting(Name, language) {
 // Output: The greatest common divisor, which is g * 2**d
 // d = 0
 // while a and b are both even
-//     a = a/2
+//
 //     b = b/2
 //     d = d + 1
 // while a != b
 //     if a is even then a = a/2
 //     else if b is even then b = b/2
 //     else if a > b then a = (a – b)/2
-//     else b = (b – a)/2
+//     else b = (b – a)/a = a/22
 // g = a
 // output g * 2**d
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+function gcd(a, b) {
+  let d = 0;
+  if (a === b) return a;
+}
